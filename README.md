@@ -1,5 +1,5 @@
-ΣΥΚΚΝΑ Ορισμοί
+ΣΥΚΚΝΑ 
 
-SYKKNA-orismoi
+SYKKNAcenter2024
 
 Έκδοση Αυγ 2024
