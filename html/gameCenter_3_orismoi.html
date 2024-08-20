@@ -193,6 +193,7 @@
 			
 
 			} //-- END loop s' oles tiw eggrafes
+			document.getElementById("myProgress").style.visibility="hidden";
 
 			// emploutiseMenuAtomvn();
 			// krybei oloyw toyw orismoyw ana atoma (etsi prepei)
@@ -1113,7 +1114,7 @@
 							</thead>
 							<tbody id='tbody-atomikvn-orismvn'>
 								<!--   gemizei me orismoys --- DONT DELETE  -->
-								<div data-role="progress" data-type="line" data-small="true"></div>
+								<div id="myProgress" data-role="progress" data-type="line" data-small="true" visibility="hidden"></div>
 
 							</tbody>
 						</table>
@@ -1251,6 +1252,7 @@
 			opacity: 0
 		});
 		document.getElementById("myBody").style.display ="none";
+		document.getElementById("myProgress").style.visibility="visible";
 
 	}
 
