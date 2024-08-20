@@ -33,7 +33,7 @@
 		// Set a callback to run when the Google Visualization API is loaded.
 		google.charts.setOnLoadCallback(drawchart);	 	 
 
-	console.log("09:20");
+	console.log("09:25");
 	var myEmail = "";
 	var myPass =  "";
 	var idFileDiaithtes="";
@@ -1078,7 +1078,7 @@
 
 			<nav class="bg-white p-3">
 			 	<div class="nav nav-pills" id="nav-tab" role="tablist">
-			    	<a class="nav-item nav-link active" id="nav-hmerologio-tab" data-toggle="tab" href="#nav-hmerologio" role="tab" aria-controls="nav-hmerologio" aria-selected="false"><i class="fas fa-user"></i> Ατομικά</a>			 		
+			    	<a class="nav-item nav-link active" id="nav-hmerologio-tab" data-toggle="tab" href="#nav-hmerologio" role="tab" aria-controls="nav-hmerologio" aria-selected="false"><i class="fas fa-user" onclick="refreshPage()"></i> Ατομικά</a>			 		
 			    	<!-- a class="nav-item nav-link" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true" style="visibility: hidden;><i class="far fa-calendar-alt"></i> Ημερολογιακά</a -->
 
 			 	</div>
@@ -1087,7 +1087,7 @@
 
 			 	<div class="tab-pane fade pb-3 show active" id="nav-hmerologio" role="tabpanel" aria-labelledby="nav-hmerologio-tab"> 		
 			 		<h6 id="myAlertBar" class="alert alert-info">Oρισμοί ανά άτομο.    
-						<button type="button" class="close" data-dismiss="alert" aria-label="Close" onclick="refreshPage()">
+						<button type="button" class="close" data-dismiss="alert" aria-label="Close">
 							<span aria-hidden="true">&times;</span>
 						</button>
   					</h6>
