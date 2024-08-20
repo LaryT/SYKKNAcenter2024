@@ -33,7 +33,7 @@
 		// Set a callback to run when the Google Visualization API is loaded.
 		google.charts.setOnLoadCallback(drawchart);	 	 
 
-	console.log("08:00");
+	console.log("09:20");
 	var myEmail = "";
 	var myPass =  "";
 	var idFileDiaithtes="";
@@ -1087,7 +1087,7 @@
 
 			 	<div class="tab-pane fade pb-3 show active" id="nav-hmerologio" role="tabpanel" aria-labelledby="nav-hmerologio-tab"> 		
 			 		<h6 id="myAlertBar" class="alert alert-info">Oρισμοί ανά άτομο.    
-						<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+						<button type="button" class="close" data-dismiss="alert" aria-label="Close" onclick="refreshPage()">
 							<span aria-hidden="true">&times;</span>
 						</button>
   					</h6>
@@ -1248,6 +1248,10 @@
 		});
 		document.getElementById("myBody").style.display ="none";
 
+	}
+
+	function refreshPage() {
+  		window.location.href = window.location.href;
 	}
 
 	function sePoioArxeioBriskoUserPass() {
