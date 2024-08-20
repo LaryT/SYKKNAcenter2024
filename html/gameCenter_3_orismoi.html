@@ -1024,91 +1024,24 @@
 
  
 
-/*
-	    function emploutiseMenuApoPerametrous(){
-	    		//--- gia to submenu diorganvtrias arxhs
-				var iLi = document.createElement('li');
-				iLi.id = 'iLi-' + decodeURIComponent(getQueryVariable("pNameDiorganvtriaArxh"));
-				iLi.className = 'nav-item';
-	    		document.getElementById('ul-navbar-id').appendChild(iLi);	
-
-	    		var iA = document.createElement('a');
-				iA.id = 'ul-navbar-li-a-'+decodeURIComponent(getQueryVariable("pNameDiorganvtriaArxh"));
-				iA.className = 'nav-link';
-				iA.href='gameCenter_1_Diorganvseis.html'+
-					'?pPower='+decodeURIComponent(getQueryVariable("pNameDiorganvtriaArxh"))+
-					'&pPowerDiorganvtriaArxh='+decodeURIComponent(getQueryVariable("pPowerDiorganvtriaArxh"));
-				iA.innerHTML = decodeURIComponent(getQueryVariable("pNameDiorganvtriaArxh"));
-
-				document.getElementById('iLi-' + decodeURIComponent(getQueryVariable("pNameDiorganvtriaArxh"))).appendChild(iA);
-
-	    }
-*/
-		/*
-	    function emploutiseMenuAtomvn(){
-
-			arrayOrismenoiDiaithtesKrites.sort();
-			arrayOrismenoiKrites.sort();
-
-			//---- filtro button diaithtvn
-	    	for (var row=0; row < arrayOrismenoiDiaithtesKrites.length; row++){
-
-				var iA = document.createElement('div');
-				iA.id = 'item-person-'+row;
-				iA.className = 'dropdown-item  item-'+(arrayOrismenoiDiaithtesKrites[row]);
-
-				iA.onclick = function(){hideAllOrismousAtomvn(this)};
-				//iA.href='';
-				iA.innerHTML = arrayOrismenoiDiaithtesKrites[row];
-				document.getElementById('menu-list-atomvn').appendChild(iA);
-			}	
- 
-	    	for (var row=0; row < arrayOrismenoiKrites.length; row++){
-
-				var iA = document.createElement('div');
-				iA.id = 'item-person-'+row;
-				iA.className = 'dropdown-item  item-'+(arrayOrismenoiKrites[row]);
-
-				iA.onclick = function(){hideAllOrismousAtomvn(this)};
-				//iA.href='';
-				iA.innerHTML = arrayOrismenoiKrites[row];
-				document.getElementById('menu-list-atomvn-krites').appendChild(iA);
-			}				
-	    }
-			*/
-
-			/*
-	    function hideAllOrismousAtomvn(obj){
-			 $(".cl-diaithtes-krites").hide();  
-			 var myClassToShow = '.cl-'+obj.innerHTML.replace(/\s+/g, '');
-			 $(myClassToShow).show();  
-			document.getElementById('poios-exei-epilegei-gia-emfanish').innerHTML = 'Ορισμοί για : <span class="text-dark font-weight-bold">' + obj.innerHTML +'</span>';
-			 $("#poios-exei-epilegei-gia-emfanish").show();
-	    }
-			 */
- 
-
     </script>
 
 	<!-- *******  01 lary 2024 ******** -->
 	<link href="https://cdn.metroui.org.ua/v4/css/metro-all.min.css" rel="stylesheet">
 
-			<style>
-				.login-form {
-					width: 350px;
-					height: auto;
-					top: 50%;
-					margin-top: -160px;
-				}
-				.bold-blue{
-					font-weight: bolder;
-					background-color:lightblue;
-				}
-
-
-			</style>
+	<style>
+		.login-form {
+			width: 350px;
+			height: auto;
+			top: 50%;
+			margin-top: -160px;
+		}
+		.bold-blue{
+			font-weight: bolder;
+			background-color:lightblue;
+		}
+	</style>
 	<!-- *******  end 01 lary 2024 ******** -->
-   
   </head>
 
   <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="80">
@@ -1129,10 +1062,7 @@
       </div>
     </nav>
 
-
 	<!-- *******  01 lary 2024 ******** -->
-
-
 	<div id="myBody" class="h-vh-100 bg-brandColor2">
 		<form class="login-form bg-white p-6 mx-auto border bd-default win-shadow"
 			data-role="validator"
@@ -1154,13 +1084,8 @@
 				<button class="button">Submit form</button>
 			</div>
 		</form>
-
 	</div>
-
-
 	<!-- ******* end 01 lary 2024 ******** -->
-
-
 
 	<section id="sec-1">
 
@@ -1179,9 +1104,8 @@
 			<nav class="bg-white p-3">
 			 	<div class="nav nav-pills" id="nav-tab" role="tablist">
 			    	<a class="nav-item nav-link active" id="nav-hmerologio-tab" data-toggle="tab" href="#nav-hmerologio" role="tab" aria-controls="nav-hmerologio" aria-selected="false"><i class="fas fa-user"></i> Ατομικά</a>			 		
-			    	<a class="nav-item nav-link" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true" style="visibility: hidden;><i class="far fa-calendar-alt"></i> Ημερολογιακά</a>
+			    	<!-- a class="nav-item nav-link" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true" style="visibility: hidden;><i class="far fa-calendar-alt"></i> Ημερολογιακά</a -->
 
-			    	<!--  a class="nav-item nav-link" id="nav-xl-tab" data-toggle="tab" href="#nav-xl" role="tab" aria-controls="nav-xl" aria-selected="false">XL μορφή</a   -->
 			 	</div>
 			</nav>
 			<div class="tab-content" id="nav-tabContent">
@@ -1193,28 +1117,6 @@
 						</button>
   					</h6>
 
-					
-					<!-- div class="btn-group" style="visibility: hidden;">
-						 <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-						   Διαιτητές : Επίλεξε άτομο
-						 </button>
-						 <div id="menu-list-atomvn" class="dropdown-menu">						 	
-						    <a class="dropdown-item" href="#">*</a>	
-						    <a class="dropdown-item" href="#">*</a>							    			
-						 </div>
-					</div -->
-
-					<!-- div class="btn-group" style="visibility: hidden;">
-						 <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-						    Κριτές : Επίλεξε άτομο
-						 </button>
-						 <div id="menu-list-atomvn-krites" class="dropdown-menu">						 	
-						    <a class="dropdown-item" href="#">*</a>				
-						    <a class="dropdown-item" href="#">*</a>
-						 </div>
-					</div -->
-
-					<!-- h6 class="alert alert-info" id="poios-exei-epilegei-gia-emfanish"></h6 -->	
 					<section>
 						<table id='table-orismvn' class="table table-hover table-sm table-borderless align-self-center">
 							<thead id="thead-orimoi-ana-atomo" class="align-items-center thead-light">
@@ -1240,9 +1142,8 @@
 			 		
 			 	</div>
 
-			 	<div class="tab-pane fade " id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">	
+			 	<!-- div class="tab-pane fade " id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">	
 					<div id="accordion-agvnistikes">
-					    <!--  gemizei me js AGVNISTIKES - BATMOLOGIES --- DONT DELETE  -->
 							<nav>
 								<div class="nav nav-tabs" id="nav-tab" role="tablist">
 							    	<a class="nav-item nav-link active" id="nav-orismoi-tab" data-toggle="tab" href="#nav-orismoi" role="tab" aria-controls="nav-orismoi" aria-selected="true"><i class="fas fa-tasks"></i> Πρόγραμμα</a>
@@ -1274,23 +1175,13 @@
 								</div>								
 							</div>
 					</div>
-			  	</div>
+			  	</div --> 	
 
-			 	<!-- div class="tab-pane fade" id="nav-xl" role="tabpanel" aria-labelledby="nav-xl-tab">
-					<div id="outer-div-for-xl-like">
-						... Σύντομα XL μορφή ...
 
-					</div>
-
-			 	</div  -->		
-			 	<!--   gemizei me js to XL--- DONT DELETE  -->	 	
 			</div>
 		</div>
 	</section>
 
-
-
- 
 
 	<footer class="text-light bg-dark">
 			<div class="container-fluid">
@@ -1344,13 +1235,8 @@
 			        if (pos < winTop + 600) {
 			          $(this).addClass("slide");
 			        }
-			    });
- 
-
-
+			    }); 
 			 });
- 
-
 		});
 	</script>
 
@@ -1363,8 +1249,6 @@
 
 <script>
 
-
-
 	function invalidForm(){
 		var form  = $(this);
 		form.addClass("ani-ring");
@@ -1374,10 +1258,8 @@
 	}
 
 	function validateForm(){
-
 		myEmail = document.getElementById("myEmail");
 		myPass =  document.getElementById("myPass");
-
 
 		var myWebxlID = getQueryVariable("pPowerDiorganvtriaArxh");
 
@@ -1391,9 +1273,6 @@
 		});
 		document.getElementById("myBody").style.display ="none";
 
-
-		
-
 	}
 
 	function sePoioArxeioBriskoUserPass() {
@@ -1401,17 +1280,14 @@
     		var strQueryForURI;
     
 			strQueryForURI = "SELECT * WHERE E='"+decodeURIComponent(getQueryVariable("pNamePrvtathlhmatos"))+"' AND H='"+decodeURIComponent(getQueryVariable("pNameDiorganvtriaArxh"))+"'  order by D,A,E,H ";
-	
-			// console.log( strQueryForURI);
 			queryString = encodeURIComponent(strQueryForURI);
       		var query = new google.visualization.Query(
           	'https://docs.google.com/spreadsheets/d/'+getQueryVariable("pPowerDiorganvtriaArxh") +'/gviz/tq?gid=&headers=1&tq=' + queryString);
 
       		 query.send(handle_DrawAxeioDiorganvevn_DataQueryResponse);      		
-    	}
+    }
 
-		function handle_DrawAxeioDiorganvevn_DataQueryResponse(response) {
-	    	
+	function handle_DrawAxeioDiorganvevn_DataQueryResponse(response) {    	
 			if (response.isError()) {
 			  alert('Error in query: ' + response.getMessage() + ' ' + response.getDetailedMessage());
 			  return;
@@ -1419,30 +1295,18 @@
 			  var data = response.getDataTable();
 			   var posesEggrafes = data.getNumberOfRows();
 
-
-
-			   //console.log( "posesEggrafes = " +posesEggrafes );
 			   for (var row=0; row < posesEggrafes; row++){
-
 				idFileKrites = data.getFormattedValue(row,28);
 				idFileDiaithtes = data.getFormattedValue(row,30);
-
-				// console.log( idFileKrites ,  idFileDiaithtes );
-
 			   }
 			   	// to 1= KRTIHS, arxeo kritvn || to 2 = diaithths arxeio diaithtvn
 				yparxeiKrithsStoArxeioMeToPassAyto(idFileKrites);
-
-
-		}
+	}
 
 		function yparxeiKrithsStoArxeioMeToPassAyto(idFileProsEreyna) {
     		var queryString; 
     		var strQueryForURI;
-    
-			strQueryForURI = "SELECT * WHERE G='" + myEmail.value.trim() +"' AND K='"+myPass.value.trim()+"'  order by G,K ";
-	
-			// console.log( strQueryForURI);		
+			strQueryForURI = "SELECT * WHERE G='" + myEmail.value.trim() +"' AND K='"+myPass.value.trim()+"'  order by G,K ";		
 			queryString = encodeURIComponent(strQueryForURI);
       		var query = new google.visualization.Query(
           	'https://docs.google.com/spreadsheets/d/'+ idFileProsEreyna +'/gviz/tq?gid=&headers=1&tq=' + queryString);
@@ -1456,8 +1320,7 @@
 			}
 			var data = response.getDataTable();
 			var posesEggrafes = data.getNumberOfRows();
-			//var onomateponymo_KRITH_GiaFiltroProsemfanish = "";
-			//var onomateponymo_DIAITHTH_GiaFiltroProsemfanish = "";	
+
 			if ( posesEggrafes < 1 ){
 				alert("Δεν βρέθηκε ΚΡΙΤΗΣ με τον συνδυασμό αυτό mail και pass ");
 				onomateponymo_KRITH_GiaFiltroProsemfanish = "";
@@ -1466,11 +1329,9 @@
 				}				
 				return;
 			}
-			// console.log( "posesEggrafes me to mail ayto ?= " +posesEggrafes );			
 			for (var row=0; row < posesEggrafes; row++){
 				onomateponymo_KRITH_GiaFiltroProsemfanish = data.getFormattedValue(row,0);
 			}
-			// console.log( onomateponymo_KRITH_GiaFiltroProsemfanish );
 			document.getElementById("myAlertBar").innerHTML="Ορισμοί κριτή : « "  + onomateponymo_KRITH_GiaFiltroProsemfanish+" »";
 			document.getElementById("diorganvsh-title").innerHTML="<br/> " + onomateponymo_KRITH_GiaFiltroProsemfanish +" ";
 			document.getElementById("diorganvsh-sub-title").innerHTML="Κριτής";			
@@ -1483,8 +1344,6 @@
     		var strQueryForURI;
     
 			strQueryForURI = "SELECT * WHERE G='" + myEmail.value.trim() +"' AND K='"+myPass.value.trim()+"'  order by G,K ";
-	
-			// console.log( strQueryForURI);		
 			queryString = encodeURIComponent(strQueryForURI);
       		var query = new google.visualization.Query(
           	'https://docs.google.com/spreadsheets/d/'+ idFileProsEreyna +'/gviz/tq?gid=&headers=1&tq=' + queryString);
@@ -1498,19 +1357,15 @@
 			}
 			var data = response.getDataTable();
 			var posesEggrafes = data.getNumberOfRows();
-			//var onomateponymo_KRITH_GiaFiltroProsemfanish = "";
-			//var onomateponymo_DIAITHTH_GiaFiltroProsemfanish = "";	
 			if ( posesEggrafes < 1 ){
 				alert("Δεν βρέθηκε ΔΙΑΙΤΗΤΗΣ με τον συνδυασμό αυτό mail και pass   Κάντε refresh και προσπαθήστε ξανά");
 				onomateponymo_DIAITHTH_GiaFiltroProsemfanish = "";
 				document.getElementById("myAlertBar").innerHTML="Προσπαθήστε και πάλι με σωστά στοιχεία";				
 				return;
 			}
-			// console.log( "posesEggrafes me to mail ayto ?= " +posesEggrafes );			
 			for (var row=0; row < posesEggrafes; row++){
 				onomateponymo_DIAITHTH_GiaFiltroProsemfanish = data.getFormattedValue(row,0);
 			}
-		//	console.log( onomateponymo_DIAITHTH_GiaFiltroProsemfanish );
 			document.getElementById("myAlertBar").innerHTML="Ορισμοί διαιτητή : « " + onomateponymo_DIAITHTH_GiaFiltroProsemfanish +" »";	 		
 			document.getElementById("diorganvsh-title").innerHTML="<br/> " + onomateponymo_DIAITHTH_GiaFiltroProsemfanish +" ";
 			document.getElementById("diorganvsh-sub-title").innerHTML="Διαιτητής";
@@ -1519,27 +1374,7 @@
 		}		
 
 </script>
-
-
 <!-- *******  01 lary 2024 ******** -->
-
- 
-
- 
-    <!-- google analytics
-    ================================================== -->
-	<!-- script>
-	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-	  ga('create', 'UA-3055747-35', 'auto');
-	  ga('send', 'pageview');
-
-	</script  -->
-
-
 
   </body>
 </html>
