@@ -98,7 +98,7 @@
 
     		if( ! yparxeiSyndedemenoBIGQueryArxeio()){
 				document.getElementById("sec-1").style.visibility="hidden";
-    			document.getElementById("sec-2").style.visibility="hidden";
+    			// document.getElementById("sec-2").style.visibility="hidden";
 
     			document.getElementById("diorganvsh-title").innerHTML ='<b>ΔΕΝ υπάρχει συνδεδεμένο</b> αρχείο ορισμών';
     			return;
@@ -354,24 +354,6 @@
 						iTr.id = 'left-omada-table-tbody-tr-' + row;
 						iTr.className = 'd-flex justify-content-start align-items-center';
 						document.getElementById('left-omada-table-tbody-'+ row).appendChild(iTr);	
-/*
-							var iTd = document.createElement('td');
-							iTd.id = 'td-logo-omada-left-' + row;
-							iTd.className = 'flag-col';
-							document.getElementById('left-omada-table-tbody-tr-'+ row).appendChild(iTd);	
-
-								var iDiv = document.createElement('div');
-								iDiv.id = 'div-logo-omada-left-' + row;
-								iDiv.className = 'flag';
-								document.getElementById('td-logo-omada-left-'+ row).appendChild(iDiv);	
-
-									var iImg = document.createElement('img');
-									iImg.id = 'div-logo-omada-left-' + row;
-									iImg.className = 'small_flag mr-2';
-									iImg.alt='logo team '+ data.getFormattedValue(row, 6);
-									iImg.src = data.getFormattedValue(row, 48);
-									document.getElementById('div-logo-omada-left-'+ row).appendChild(iImg);	
-*/
 
 							var iTd = document.createElement('td');
 							iTd.id = 'td-name-omada-left-' + row;
@@ -462,9 +444,6 @@
 								iDiv.innerHTML=data.getFormattedValue(row, 3) + ' ' + data.getFormattedValue(row, 4);
 								document.getElementById('td-info-'+ row).appendChild(iDiv);	
 
-
-
-
 							//---------- 
 							//---------- dejia omada
 							//---------- 		
@@ -515,7 +494,6 @@
 				iDiv.className = 'col-md-1 d-none d-md-block code-game';
 				iDiv.innerHTML = data.getFormattedValue(row, 16) +'<br/>' + data.getFormattedValue(row, 1) +'η αγ' ;
 				document.getElementById('wrapper-div-' + row).appendChild(iDiv);
-
 
 
 
@@ -791,10 +769,7 @@
 
 							var iTd = document.createElement('td');
 							iTd.id = 'eggrafh-orismou-td-onoma-' + row+'-'+sthlh;
-							/*;
-							var onomateponymo_KRITH_GiaFiltroProsemfanish = "";
-							var onomateponymo_DIAITHTH_GiaFiltroProsemfanish = "";	
-							*/
+
 							if (data.getFormattedValue(row,sthlh) == onomateponymo_KRITH_GiaFiltroProsemfanish ){
 								iTd.className = 'flex-fill text-nowrap olo-name-orismoi bold-blue'
 
@@ -1142,7 +1117,7 @@
 			 		
 			 	</div>
 
-			 	<!-- div class="tab-pane fade " id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">	
+			 	<div class="tab-pane fade " id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">	
 					<div id="accordion-agvnistikes">
 							<nav>
 								<div class="nav nav-tabs" id="nav-tab" role="tablist">
@@ -1175,7 +1150,7 @@
 								</div>								
 							</div>
 					</div>
-			  	</div --> 	
+			  	</div> 	
 
 
 			</div>
