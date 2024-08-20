@@ -7,10 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="google-site-verification" content="tC0bBVVHTu_CbZkph7Mg3M_4JpugQFdEg09THhHmeMU" />
     
-	<meta name="description" content="Το GameCenter (app) διαχειρίζεται, παρακολουθεί και παρουσιάζει στο web, εθνικά - τοπικά πρωταθλήματα μπάσκετ, τουρνουά που διοργανώνουν συλλόγοι μπάσκετ, οργανώνοντας τις κατηγορίες, ομίλους, βαθμολογίες και ρόστερ. Πρόκειται για ένα web app απόλυτα συμβατό σε υπολογιστές και κινητές συσκευές στην διεύθυνση gamecenter-2018.appspot.com" />
-	<meta name="keywords" content="GameCenter, basketball, games, results, ranking, rosters, players, champions" />
+	<meta name="description" content="Το ΣΥΚΚΝΑ Center (app) διαχειρίζεται, παρακολουθεί και παρουσιάζει στο web, εθνικά - τοπικά πρωταθλήματα μπάσκετ, τουρνουά που διοργανώνουν συλλόγοι μπάσκετ, οργανώνοντας τις κατηγορίες, ομίλους, βαθμολογίες και ρόστερ. Πρόκειται για ένα web app απόλυτα συμβατό σε υπολογιστές και κινητές συσκευές στην διεύθυνση gamecenter-2018.appspot.com" />
+	<meta name="keywords" content="ΣΥΚΚΝΑ Center, basketball, games, results, ranking, rosters, players, champions" />
 	<meta name="language" content="greek" />
-	<meta name="author" content="GameCenter" />
+	<meta name="author" content="ΣΥΚΚΝΑ Center" />
 	<meta name="web_author" content="Λazaros" />
     
 	<link rel="icon" href="../favicon.ico"  />
@@ -1024,7 +1024,7 @@
 
  
 
-
+/*
 	    function emploutiseMenuApoPerametrous(){
 	    		//--- gia to submenu diorganvtrias arxhs
 				var iLi = document.createElement('li');
@@ -1043,7 +1043,8 @@
 				document.getElementById('iLi-' + decodeURIComponent(getQueryVariable("pNameDiorganvtriaArxh"))).appendChild(iA);
 
 	    }
-
+*/
+		/*
 	    function emploutiseMenuAtomvn(){
 
 			arrayOrismenoiDiaithtesKrites.sort();
@@ -1061,7 +1062,7 @@
 				iA.innerHTML = arrayOrismenoiDiaithtesKrites[row];
 				document.getElementById('menu-list-atomvn').appendChild(iA);
 			}	
-			//---- filtro button diaithtvn
+ 
 	    	for (var row=0; row < arrayOrismenoiKrites.length; row++){
 
 				var iA = document.createElement('div');
@@ -1074,7 +1075,9 @@
 				document.getElementById('menu-list-atomvn-krites').appendChild(iA);
 			}				
 	    }
+			*/
 
+			/*
 	    function hideAllOrismousAtomvn(obj){
 			 $(".cl-diaithtes-krites").hide();  
 			 var myClassToShow = '.cl-'+obj.innerHTML.replace(/\s+/g, '');
@@ -1082,6 +1085,7 @@
 			document.getElementById('poios-exei-epilegei-gia-emfanish').innerHTML = 'Ορισμοί για : <span class="text-dark font-weight-bold">' + obj.innerHTML +'</span>';
 			 $("#poios-exei-epilegei-gia-emfanish").show();
 	    }
+			 */
  
 
     </script>
@@ -1110,7 +1114,7 @@
   <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="80">
     <nav class="navbar navbar-expand-md  navbar-light bg-white fixed-top skia-b">
     	<!-- a class="navbar-brand" href="/" -->
-		<img width="32px" src="../favicon.ico" alt="GameCenter logo">
+		<img width="32px" src="../favicon.ico" alt="ΣΥΚΚΝΑ Center logo">
 		<!-- /a -->
     	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
         	<span class="navbar-toggler-icon"></span>
@@ -1158,32 +1162,6 @@
 
 
 
-
-
-	
-
-
-
-	<!-- section  id="sec-2">
-		<div class="container">
-			
-		</div>
-	</section -->
- 
-	<!-- div class="row">
-		<div class="col-md-12">
-			<div class="list-group">  
-				<ul class="list-unstyled" id="list-diorganvsevn-id"> 
-
-					<div class="progress">
-					  <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
-					</div>
-
-				</ul>
-			</div>
-		</div>
-	</div -->	
-
 	<section id="sec-1">
 
 		<div class="container-fluid p-5  mb-3 bg-light" id="container-diorganvsh-title">
@@ -1214,27 +1192,27 @@
 							<span aria-hidden="true">&times;</span>
 						</button>
   					</h6>
-					<div class="btn-group" style="visibility: hidden;">
+
+					
+					<!-- div class="btn-group" style="visibility: hidden;">
 						 <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 						   Διαιτητές : Επίλεξε άτομο
 						 </button>
 						 <div id="menu-list-atomvn" class="dropdown-menu">						 	
-						 	<!--  gemizei me JS --->
 						    <a class="dropdown-item" href="#">*</a>	
 						    <a class="dropdown-item" href="#">*</a>							    			
 						 </div>
-					</div>
+					</div -->
 
-					<div class="btn-group" style="visibility: hidden;">
+					<!-- div class="btn-group" style="visibility: hidden;">
 						 <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 						    Κριτές : Επίλεξε άτομο
 						 </button>
 						 <div id="menu-list-atomvn-krites" class="dropdown-menu">						 	
-						 	<!--  gemizei me JS --->
 						    <a class="dropdown-item" href="#">*</a>				
 						    <a class="dropdown-item" href="#">*</a>
 						 </div>
-					</div>
+					</div -->
 
 					<h6 class="alert alert-info" id="poios-exei-epilegei-gia-emfanish"></h6>	
 					<section>
@@ -1316,21 +1294,6 @@
 
 	<footer class="text-light bg-dark">
 			<div class="container-fluid">
-
-				<!-- script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script -->
-				<!-- 00 1enarxi antapokri for iGameCenter arxikh sym -->				
-				<!-- div class="row">	
-					<div class="col-12 pt-3 ">
-						<ins class="adsbygoogle"
-						     style="display:block"
-						     data-ad-client="ca-pub-9529818444792202"
-						     data-ad-slot="5336108283"
-						     data-ad-format="auto"></ins>
-						<script>
-						(adsbygoogle = window.adsbygoogle || []).push({});
-						</script>
-					</div>																			
-				</div -->	
 				<div class="row">
 					<div class="col-12 text-right">
 						<a href="#myPage" title="Πήγαινε στην κορυφή"  class="btn btn-outline-info">
@@ -1340,7 +1303,7 @@
 				</div>						
 				<div class="row">					
 					<div class="col-12 text-center">						
-						 <small><i class="far fa-copyright"></i>GameCenter</small>
+						 <small><i class="far fa-copyright"></i>ΣΥΚΚΝΑ Center</small>
 					</div>
 				</div>	
 
