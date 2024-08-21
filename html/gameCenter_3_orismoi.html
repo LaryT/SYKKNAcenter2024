@@ -33,7 +33,7 @@
 		// Set a callback to run when the Google Visualization API is loaded.
 		google.charts.setOnLoadCallback(drawchart);	 	 
 
-	console.log("12:25 Kat");
+	console.log("13:19 Kat");
 	var myEmail = "";
 	var myPass =  "";
 	var idFileDiaithtes="";
@@ -703,35 +703,30 @@
 							iTd.innerHTML = data.getFormattedValue(row,3);
 							document.getElementById('orismos-' + row+'-'+sthlh).appendChild(iTd);
 
-							var iTd = document.createElement('td');
-							iTd.id = 'eggrafh-orismou-td-vra-' + row+'-'+sthlh;
-							iTd.className = 'flex-fill  text-nowrap';
-							iTd.innerHTML = data.getFormattedValue(row,4);
-							document.getElementById('orismos-' + row+'-'+sthlh).appendChild(iTd);							
+							var iTd_vra = document.createElement('td');
+							iTd_vra.id = 'eggrafh-orismou-td-vra-' + row+'-'+sthlh;
+							iTd_vra.innerHTML = data.getFormattedValue(row,4);
+							document.getElementById('orismos-' + row+'-'+sthlh).appendChild(iTd_vra);							
 
-							var iTd = document.createElement('td');
-							iTd.id = 'eggrafh-orismou-td-ghpedo-' + row+'-'+sthlh;
-							iTd.className = 'flex-fill  text-nowrap olo-name-orismoi';
-							iTd.innerHTML = data.getFormattedValue(row,5);
-							document.getElementById('orismos-' + row+'-'+sthlh).appendChild(iTd);
+							var iTd_ghpedo = document.createElement('td');
+							iTd_ghpedo.id = 'eggrafh-orismou-td-ghpedo-' + row+'-'+sthlh;
+							iTd_ghpedo.innerHTML = data.getFormattedValue(row,5);
+							document.getElementById('orismos-' + row+'-'+sthlh).appendChild(iTd_ghpedo);
 
-								var iTd = document.createElement('td');
-								iTd.id = 'eggrafh-orismou-td-ghpedo-name-mikro-' + row+'-'+sthlh;
-								iTd.className = 'flex-fill arxika_name-orismoi  text-nowrap';
-								iTd.title= data.getFormattedValue(row,5);
-								iTd.innerHTML = data.getFormattedValue(row,5).substring(0, 8);
-								document.getElementById('orismos-' + row+'-'+sthlh).appendChild(iTd);								
+								var iTd_ghpedo_syntm = document.createElement('td');
+								iTd_ghpedo_syntm.id = 'eggrafh-orismou-td-ghpedo-name-mikro-' + row+'-'+sthlh;
+								iTd_ghpedo_syntm.title= data.getFormattedValue(row,5);
+								iTd_ghpedo_syntm.innerHTML = data.getFormattedValue(row,5).substring(0, 8);
+								document.getElementById('orismos-' + row+'-'+sthlh).appendChild(iTd_ghpedo_syntm);								
 
-							var iTd = document.createElement('td');
-							iTd.id = 'eggrafh-orismou-td-omilos-' + row+'-'+sthlh;
-							iTd.className = 'flex-fill apokrypsh';
-							iTd.innerHTML =  data.getFormattedValue(row,0);
-							document.getElementById('orismos-' + row+'-'+sthlh).appendChild(iTd);
+							var iTd_omilos = document.createElement('td');
+							iTd_omilos.id = 'eggrafh-orismou-td-omilos-' + row+'-'+sthlh;
+							iTd_omilos.innerHTML =  data.getFormattedValue(row,0);
+							document.getElementById('orismos-' + row+'-'+sthlh).appendChild(iTd_omilos);
 
 							/* για syntmhsh kathgoria ομιλου */
 							var iTd_syntm_omilou = document.createElement('td');
 								iTd_syntm_omilou.id = 'eggrafh-orismou-td-omilos-mikro-' + row+'-'+sthlh;
-								iTd_syntm_omilou.className = 'flex-fill arxika_name-orismoi  text-nowrap';
 								iTd_syntm_omilou.title= data.getFormattedValue(row,0);
 								iTd_syntm_omilou.innerHTML = data.getFormattedValue(row,0).substring(0, 6);
 								document.getElementById('orismos-' + row+'-'+sthlh).appendChild(iTd_syntm_omilou);
@@ -792,21 +787,36 @@
 								document.getElementById('orismos-' + row+'-'+sthlh).appendChild(iTd_syntm);	
 
 
+							var iTd_orismenos = document.createElement('td');
+								iTd_orismenos.id = 'eggrafh-orismou-td-orismenos-vs-' + row+'-'+sthlh;
+								iTd_orismenos.innerHTML = tieinaiorismenos ;
+								document.getElementById('orismos-' + row+'-'+sthlh).appendChild(iTd_orismenos);
+
 							// --- XRVMATIMOS ONOMATOS kai STNMISHSHS
 							if (data.getFormattedValue(row,sthlh) == onomateponymo_KRITH_GiaFiltroProsemfanish ){
+								iTd_vra.className = 'flex-fill text-nowrap bold-blue';
+								iTd_ghpedo.className = 'flex-fill text-nowrap olo-name-orismoi bold-blue';
+								iTd_ghpedo_syntm.className = 'flex-fill arxika_name-orismoi text-nowrap bold-blue';
+								iTd_omilos.className = 'flex-fill apokrypsh bold-blue';
+								iTd_syntm_omilou.className = 'flex-fill arxika_name-orismoi text-nowrap bold-blue';
 								iTd.className = 'flex-fill text-nowrap olo-name-orismoi bold-blue';
 								iTd_syntm.className = 'flex-fill arxika_name-orismoi text-nowrap bold-blue';
+								iTd_orismenos.className = 'flex-fill text-nowrap bold-blue';
+
 							}else{
+								iTd_vra.className = 'flex-fill text-nowrap';
+								iTd_ghpedo.className = 'flex-fill text-nowrap olo-name-orismoi';
+								iTd_ghpedo_syntm.className = 'flex-fill arxika_name-orismoi  text-nowrap';
+								iTd_omilos.className = 'flex-fill apokrypsh';
+								iTd_syntm_omilou.className = 'flex-fill arxika_name-orismoi  text-nowrap';
 								iTd.className = 'flex-fill text-nowrap olo-name-orismoi'
 								iTd_syntm.className = 'flex-fill arxika_name-orismoi text-nowrap';
+								iTd_orismenos.className = 'flex-fill text-nowrap';
+
 							}
 
 
-							var iTd = document.createElement('td');
-							iTd.id = 'eggrafh-orismou-td-orismenos-vs-' + row+'-'+sthlh;
-							iTd.className = 'flex-fill text-nowrap';
-							iTd.innerHTML = tieinaiorismenos ;
-							document.getElementById('orismos-' + row+'-'+sthlh).appendChild(iTd);
+
 /*
 							var iTd = document.createElement('div');
 							iTd.id = 'eggrafh-orismou-td-tieinaiorismenos-' + row+'-'+sthlh;
