@@ -33,7 +33,7 @@
 		// Set a callback to run when the Google Visualization API is loaded.
 		google.charts.setOnLoadCallback(drawchart);	 	 
 
-	console.log("11:45 ll");
+	console.log("12:00 ?");
 	var myEmail = "";
 	var myPass =  "";
 	var idFileDiaithtes="";
@@ -724,9 +724,19 @@
 
 							var iTd = document.createElement('td');
 							iTd.id = 'eggrafh-orismou-td-omilos-' + row+'-'+sthlh;
-							iTd.className = 'flex-fill';
+							iTd.className = 'flex-fill apokrypsh';
 							iTd.innerHTML =  data.getFormattedValue(row,0);
 							document.getElementById('orismos-' + row+'-'+sthlh).appendChild(iTd);
+
+							/* για syntmhsh kathgoria ομιλου */
+							var iTd_syntm_omilou = document.createElement('td');
+								iTd_syntm_omilou.id = 'eggrafh-orismou-td-omilos-mikro-' + row+'-'+sthlh;
+								iTd_syntm_omilou.className = 'flex-fill arxika_name-orismoi  text-nowrap';
+								iTd_syntm_omilou.title= data.getFormattedValue(row,0);
+								iTd_syntm_omilou.innerHTML = data.getFormattedValue(row,0).substring(0, 6);
+								document.getElementById('orismos-' + row+'-'+sthlh).appendChild(iiTd_syntm_omilou);
+
+
 
 							var iTd = document.createElement('td');
 							iTd.id = 'eggrafh-orismou-td-ag-' + row+'-'+sthlh;
