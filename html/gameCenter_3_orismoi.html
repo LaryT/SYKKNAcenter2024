@@ -33,7 +33,7 @@
 		// Set a callback to run when the Google Visualization API is loaded.
 		google.charts.setOnLoadCallback(drawchart);	 	 
 
-	console.log("09:31");
+	console.log("10:23");
 	var myEmail = "";
 	var myPass =  "";
 	var idFileDiaithtes="";
@@ -736,7 +736,7 @@
  	
 							var iTd = document.createElement('td');
 							iTd.id = 'eggrafh-orismou-td-omada-a-' + row+'-'+sthlh;
-							iTd.className = 'flex-fill olo-name-orismoi text-right';
+							iTd.className = 'flex-fill olo-name-orismoi text-right apokrypsh';
 							iTd.innerHTML =  data.getFormattedValue(row,6);
 							document.getElementById('orismos-' + row+'-'+sthlh).appendChild(iTd);
 
@@ -755,7 +755,7 @@
 
 							var iTd = document.createElement('td');
 							iTd.id = 'eggrafh-orismou-td-omada-b-' + row+'-'+sthlh;
-							iTd.className = 'flex-fill olo-name-orismoi';
+							iTd.className = 'flex-fill olo-name-orismoi apokrypsh';
 							iTd.innerHTML =  data.getFormattedValue(row,7);
 							document.getElementById('orismos-' + row+'-'+sthlh).appendChild(iTd);
 
@@ -1360,6 +1360,17 @@
 
 </script>
 <!-- *******  01 lary 2024 ******** -->
+		<style>
+
+	@media (max-width: 768px) {
+
+		.table tbody td {
+    		padding: .22rem;
+    	}
+
+ 
+    }			
+		</style>
 
   </body>
 </html>
