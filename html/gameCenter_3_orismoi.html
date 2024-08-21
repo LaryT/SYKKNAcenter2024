@@ -33,7 +33,7 @@
 		// Set a callback to run when the Google Visualization API is loaded.
 		google.charts.setOnLoadCallback(drawchart);	 	 
 
-	console.log("13:19 Kat");
+	console.log("15:20 col");
 	var myEmail = "";
 	var myPass =  "";
 	var idFileDiaithtes="";
@@ -733,43 +733,38 @@
 
 
 
-							var iTd = document.createElement('td');
-							iTd.id = 'eggrafh-orismou-td-ag-' + row+'-'+sthlh;
-							iTd.className = 'flex-fill text-nowrap apokrypsh';
-							iTd.innerHTML =  data.getFormattedValue(row,1);
-							document.getElementById('orismos-' + row+'-'+sthlh).appendChild(iTd);
+							var iTd_ag = document.createElement('td');
+							iTd_ag.id = 'eggrafh-orismou-td-ag-' + row+'-'+sthlh;
+							iTd_ag.innerHTML =  data.getFormattedValue(row,1);
+							document.getElementById('orismos-' + row+'-'+sthlh).appendChild(iTd_ag);
  	
-							var iTd = document.createElement('td');
-							iTd.id = 'eggrafh-orismou-td-omada-a-' + row+'-'+sthlh;
-							iTd.className = 'flex-fill olo-name-orismoi text-right apokrypsh';
-							iTd.innerHTML =  data.getFormattedValue(row,6);
-							document.getElementById('orismos-' + row+'-'+sthlh).appendChild(iTd);
+							var iTd_omada_a = document.createElement('td');
+							iTd_omada_a.id = 'eggrafh-orismou-td-omada-a-' + row+'-'+sthlh;
+							iTd_omada_a.innerHTML =  data.getFormattedValue(row,6);
+							document.getElementById('orismos-' + row+'-'+sthlh).appendChild(iTd_omada_a);
 
-								var iTd = document.createElement('td');
-								iTd.id = 'eggrafh-orismou-td-omada-a-name-mikro-' + row+'-'+sthlh;
-								iTd.className = 'flex-fill arxika_name-orismoi  text-nowrap text-right';
-								iTd.title= data.getFormattedValue(row,6);
-								iTd.innerHTML = data.getFormattedValue(row,6).substring(0, 5);
-								document.getElementById('orismos-' + row+'-'+sthlh).appendChild(iTd);	
+								var iTd_omada_a_syntm = document.createElement('td');
+								iTd_omada_a_syntm.id = 'eggrafh-orismou-td-omada-a-name-mikro-' + row+'-'+sthlh;
+								iTd_omada_a_syntm.title= data.getFormattedValue(row,6);
+								iTd_omada_a_syntm.innerHTML = data.getFormattedValue(row,6).substring(0, 5);
+								document.getElementById('orismos-' + row+'-'+sthlh).appendChild(iTd_omada_a_syntm);	
 
-							var iTd = document.createElement('td');
-							iTd.id = 'eggrafh-orismou-td-versus-' + row+'-'+sthlh;
-							iTd.className = 'flex-fill apokrypsh';
-							iTd.innerHTML = '-';
-							document.getElementById('orismos-' + row+'-'+sthlh).appendChild(iTd);	
+							var iTd_versus = document.createElement('td');
+							iTd_versus.id = 'eggrafh-orismou-td-versus-' + row+'-'+sthlh;
+							iTd_versus.innerHTML = '-';
+							document.getElementById('orismos-' + row+'-'+sthlh).appendChild(iTd_versus);	
 
-							var iTd = document.createElement('td');
-							iTd.id = 'eggrafh-orismou-td-omada-b-' + row+'-'+sthlh;
-							iTd.className = 'flex-fill olo-name-orismoi apokrypsh';
-							iTd.innerHTML =  data.getFormattedValue(row,7);
-							document.getElementById('orismos-' + row+'-'+sthlh).appendChild(iTd);
+							var iTd_omada_b = document.createElement('td');
+							iTd_omada_b.id = 'eggrafh-orismou-td-omada-b-' + row+'-'+sthlh;
+							iTd_omada_b.innerHTML =  data.getFormattedValue(row,7);
+							document.getElementById('orismos-' + row+'-'+sthlh).appendChild(iTd_omada_b);
 
-								var iTd = document.createElement('td');
-								iTd.id = 'eggrafh-orismou-td-omada-b-name-mikro-' + row+'-'+sthlh;
-								iTd.className = 'flex-fill arxika_name-orismoi  text-nowrap';
-								iTd.title= data.getFormattedValue(row,7);
-								iTd.innerHTML = data.getFormattedValue(row,7).substring(0, 5);
-								document.getElementById('orismos-' + row+'-'+sthlh).appendChild(iTd);	
+								var iTd_omada_b_syntm = document.createElement('td');
+								iTd_omada_b_syntm.id = 'eggrafh-orismou-td-omada-b-name-mikro-' + row+'-'+sthlh;
+								iTd_omada_b_syntm.className = 'flex-fill arxika_name-orismoi  text-nowrap';
+								iTd_omada_b_syntm.title= data.getFormattedValue(row,7);
+								iTd_omada_b_syntm.innerHTML = data.getFormattedValue(row,7).substring(0, 5);
+								document.getElementById('orismos-' + row+'-'+sthlh).appendChild(iTd_omada_b_syntm);	
 
 							/* ---- ονοματεπωνυμο κριτη ----  */
 
@@ -799,6 +794,12 @@
 								iTd_ghpedo_syntm.className = 'flex-fill arxika_name-orismoi text-nowrap bold-blue';
 								iTd_omilos.className = 'flex-fill apokrypsh bold-blue';
 								iTd_syntm_omilou.className = 'flex-fill arxika_name-orismoi text-nowrap bold-blue';
+								iTd_ag.className = 'flex-fill text-nowrap apokrypsh bold-blue';
+								iTd_omada_a.className = 'flex-fill olo-name-orismoi text-right apokrypsh bold-blue';
+								iTd_omada_a_syntm.className = 'flex-fill arxika_name-orismoi  text-nowrap text-right bold-blue';
+								iTd_versus.className = 'flex-fill apokrypsh bold-blue';
+								iTd_omada_b.className = 'flex-fill olo-name-orismoi apokrypsh bold-blue';
+								iTd_omada_b_syntm.className = 'flex-fill arxika_name-orismoi text-nowrap bold-blue';
 								iTd.className = 'flex-fill text-nowrap olo-name-orismoi bold-blue';
 								iTd_syntm.className = 'flex-fill arxika_name-orismoi text-nowrap bold-blue';
 								iTd_orismenos.className = 'flex-fill text-nowrap bold-blue';
@@ -809,6 +810,12 @@
 								iTd_ghpedo_syntm.className = 'flex-fill arxika_name-orismoi  text-nowrap';
 								iTd_omilos.className = 'flex-fill apokrypsh';
 								iTd_syntm_omilou.className = 'flex-fill arxika_name-orismoi  text-nowrap';
+								iTd_ag.className = 'flex-fill text-nowrap apokrypsh';
+								iTd_omada_a.className = 'flex-fill olo-name-orismoi text-right apokrypsh';
+								iTd_omada_a_syntm.className = 'flex-fill arxika_name-orismoi  text-nowrap text-right';
+								iTd_versus.className = 'flex-fill apokrypsh';
+								iTd_omada_b.className = 'flex-fill olo-name-orismoi apokrypsh';
+								iTd_omada_b_syntm.className = 'flex-fill arxika_name-orismoi  text-nowrap';
 								iTd.className = 'flex-fill text-nowrap olo-name-orismoi'
 								iTd_syntm.className = 'flex-fill arxika_name-orismoi text-nowrap';
 								iTd_orismenos.className = 'flex-fill text-nowrap';
