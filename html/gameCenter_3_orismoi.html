@@ -33,7 +33,7 @@
 		// Set a callback to run when the Google Visualization API is loaded.
 		google.charts.setOnLoadCallback(drawchart);	 	 
 
-	console.log("15:20 col");
+	console.log("ΣΥΚΚΝΑ - v.2024.08.22");
 	var myEmail = "";
 	var myPass =  "";
 	var idFileDiaithtes="";
@@ -746,7 +746,7 @@
 								var iTd_omada_a_syntm = document.createElement('td');
 								iTd_omada_a_syntm.id = 'eggrafh-orismou-td-omada-a-name-mikro-' + row+'-'+sthlh;
 								iTd_omada_a_syntm.title= data.getFormattedValue(row,6);
-								iTd_omada_a_syntm.innerHTML = data.getFormattedValue(row,6).substring(0, 5);
+								iTd_omada_a_syntm.innerHTML = data.getFormattedValue(row,6).substring(0, 4);
 								document.getElementById('orismos-' + row+'-'+sthlh).appendChild(iTd_omada_a_syntm);	
 
 							var iTd_versus = document.createElement('td');
@@ -763,7 +763,7 @@
 								iTd_omada_b_syntm.id = 'eggrafh-orismou-td-omada-b-name-mikro-' + row+'-'+sthlh;
 								iTd_omada_b_syntm.className = 'flex-fill arxika_name-orismoi  text-nowrap';
 								iTd_omada_b_syntm.title= data.getFormattedValue(row,7);
-								iTd_omada_b_syntm.innerHTML = data.getFormattedValue(row,7).substring(0, 5);
+								iTd_omada_b_syntm.innerHTML = data.getFormattedValue(row,7).substring(0, 4);
 								document.getElementById('orismos-' + row+'-'+sthlh).appendChild(iTd_omada_b_syntm);	
 
 							/* ---- ονοματεπωνυμο κριτη ----  */
@@ -778,7 +778,7 @@
 							var iTd_syntm = document.createElement('td');
 								iTd_syntm.id = 'eggrafh-orismou-td-onoma-name-mikro-' + row+'-'+sthlh;
 								iTd_syntm.title= data.getFormattedValue(row,sthlh);
-								iTd_syntm.innerHTML = data.getFormattedValue(row,sthlh).substring(0, 4);
+								iTd_syntm.innerHTML = data.getFormattedValue(row,sthlh).substring(0, 9);
 								document.getElementById('orismos-' + row+'-'+sthlh).appendChild(iTd_syntm);	
 
 
