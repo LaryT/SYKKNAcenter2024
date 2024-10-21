@@ -335,7 +335,7 @@
 								<div class="card-body">
 									<h5 class="card-title">Εθνικές κατηγορίες</h5>
 									<p><small class="card-text">by grbasket.gr</small></p>
-									<a href="/html/gameCenter_1_Diorganvseis.html?pPower=ΕΟΚ - ΕΣΑΚΕ&pPowerDiorganvtriaArxh=1bURffybc07Eel69CZu1WKpGj_DIRA8gaE6rQUBtg5WI" class="btn btn-outline-info btn-lg">Δες τώρα!</a>
+									<a href="/html/gameCenter_1_Diorganvseis.html?pPower=ΕΟΚ - ΕΣΑΚΕ&pPowerDiorganvtriaArxh=1wxj26wPGOKE7wdVrA7EphTthByDiZ2A_UmlfqajRLjk" class="btn btn-outline-info btn-lg">Δες τώρα!</a>
 								</div>
 							</div>
 				    	</div>
@@ -346,7 +346,7 @@
 									<h5 class="card-title">Πρωτάθλημα ΕΣΚΑΝΑ</h5>
 									<p><small class="card-text">by eskana.gr</small></p>
 									<!-- p class="card-text"><small class="text-muted"></small></p  -->
-									<a href="/html/gameCenter_1_Diorganvseis.html?pPower=ΕΣΚΑΝΑ&pPowerDiorganvtriaArxh=1bURffybc07Eel69CZu1WKpGj_DIRA8gaE6rQUBtg5WI" class="btn btn-outline-info btn-lg">Δες τώρα!</a>	
+									<a href="/html/gameCenter_1_Diorganvseis.html?pPower=ΕΣΚΑΝΑ&pPowerDiorganvtriaArxh=1wxj26wPGOKE7wdVrA7EphTthByDiZ2A_UmlfqajRLjk" class="btn btn-outline-info btn-lg">Δες τώρα!</a>	
 								</div>
 							</div>
 				    	</div>							
@@ -356,7 +356,7 @@
 								<div class="card-body">
 									<h5 class="card-title">Πρωτάθλημα ΣΥΚΚΝΑ</h5>
 									<p><small class="card-text">by sykkna.gr</small></p>
-									<a href="/html/gameCenter_1_Diorganvseis.html?pPower=ΣΥΚΚΝΑ&pPowerDiorganvtriaArxh=1bURffybc07Eel69CZu1WKpGj_DIRA8gaE6rQUBtg5WI" class="btn btn-outline-info btn-lg">Δες τώρα!</a>	
+									<a href="/html/gameCenter_1_Diorganvseis.html?pPower=ΣΥΚΚΝΑ&pPowerDiorganvtriaArxh=1wxj26wPGOKE7wdVrA7EphTthByDiZ2A_UmlfqajRLjk" class="btn btn-outline-info btn-lg">Δες τώρα!</a>	
 								</div>
 							</div>								
 				    	</div>	
@@ -426,7 +426,7 @@
 									<blockquote class="small text-right">* στοιχεία google analytics (2017-18)</blockquote>
 								</ul>
  
-								<a href="html/gameCenter_1_Diorganvseis.html?pPowerDiorganvtriaArxh=1bURffybc07Eel69CZu1WKpGj_DIRA8gaE6rQUBtg5WI" class="btn btn-primary btn-lg ">Ξεκίνα τώρα </a>
+								<a href="html/gameCenter_1_Diorganvseis.html?pPowerDiorganvtriaArxh=1wxj26wPGOKE7wdVrA7EphTthByDiZ2A_UmlfqajRLjk" class="btn btn-primary btn-lg ">Ξεκίνα τώρα </a>
  
 						</div>
 					</div>				
@@ -499,10 +499,10 @@
 
 					<div class="col-lg-4  pt-5">
 						<h5><em>Ενημερώσου</em> για τα πρωταθλήματα  </h5>	
-						<a href="html/gameCenter_1_Diorganvseis.html?pPowerDiorganvtriaArxh=1bURffybc07Eel69CZu1WKpGj_DIRA8gaE6rQUBtg5WI" class="btn btn-outline-info btn-lg mt-3">Επίλεξε τώρα πρωτάθλημα ! </a>
+						<a href="html/gameCenter_1_Diorganvseis.html?pPowerDiorganvtriaArxh=1wxj26wPGOKE7wdVrA7EphTthByDiZ2A_UmlfqajRLjk" class="btn btn-outline-info btn-lg mt-3">Επίλεξε τώρα πρωτάθλημα ! </a>
 						<hr/>			
 						<h5>Θέλεις το GameCenter για το <em>site</em> σου</h5>	
-						<a href="html/gameCenter_1_Diorganvseis.html?pPowerDiorganvtriaArxh=1bURffybc07Eel69CZu1WKpGj_DIRA8gaE6rQUBtg5WI" class="btn btn-outline-info btn-lg mt-3">Ενσωμάτωσε τώρα το πρωτάθλημα <br/> που σ' ενδιαφέρει<br/> από τα υποστηριζόμενα <br/> στο GameCenter ! </a>	
+						<a href="html/gameCenter_1_Diorganvseis.html?pPowerDiorganvtriaArxh=1wxj26wPGOKE7wdVrA7EphTthByDiZ2A_UmlfqajRLjk" class="btn btn-outline-info btn-lg mt-3">Ενσωμάτωσε τώρα το πρωτάθλημα <br/> που σ' ενδιαφέρει<br/> από τα υποστηριζόμενα <br/> στο GameCenter ! </a>	
 										
 					</div>		
 
