@@ -575,7 +575,7 @@
 										iDiv.className = 'name-diathtvn-kritvn';
 										iDiv.innerHTML ='1. '+ data.getFormattedValue(row, 10);
 										document.getElementById('div-name-diat-left-'+ row).appendChild(iDiv);										
-										baleEggrafhStaAtomika(row,data,10, 'Σ1', true);
+										baleEggrafhStaAtomika(row,data,10, 'Κ4', true);
 									}
 									if( data.getFormattedValue(row, 11) !=='' ){
 										var iDiv = document.createElement('div');
@@ -583,7 +583,7 @@
 										iDiv.className = 'name-diathtvn-kritvn';
 										iDiv.innerHTML ='2. '+ data.getFormattedValue(row, 11);
 										document.getElementById('div-name-diat-left-'+ row).appendChild(iDiv);
-										baleEggrafhStaAtomika(row,data,11, 'Σ2', true);										
+										baleEggrafhStaAtomika(row,data,11, 'Κ5', true);										
 									}
 									if( data.getFormattedValue(row, 12) !=='' ){
 										var iDiv = document.createElement('div');
@@ -591,7 +591,7 @@
 										iDiv.className = 'name-diathtvn-kritvn';
 										iDiv.innerHTML ='3. '+ data.getFormattedValue(row, 12);
 										document.getElementById('div-name-diat-left-'+ row).appendChild(iDiv);									
-										baleEggrafhStaAtomika(row,data,12, 'Σ3', true);	
+										baleEggrafhStaAtomika(row,data,12, 'Κ6', true);	
 									}
 
 				//---------- 
@@ -674,7 +674,7 @@
 			var iTr = document.createElement('tr');
 			iTr.id = 'orismos-' + row+'-'+sthlh;
 			// elegxei poy na balei border top line για να δειχνει ομαδοποιημένα τους ορισμούς ενος αγώνα των τριων κριτών εγγραφες
-			if(tieinaiorismenos == "K1" || tieinaiorismenos == "Σ1" ){
+			if(tieinaiorismenos == "K1" || tieinaiorismenos == "Κ4" ){
 				iTr.className = 'seira-orismou-diaithth-krith my-border-top justify-content-between align-items-center text-left cl-diaithtes-krites cl-'+ data.getFormattedValue(row, sthlh).replace(/\s+/g, '');
 			}else{
 				iTr.className = 'seira-orismou-diaithth-krith  justify-content-between align-items-center text-left cl-diaithtes-krites cl-'+ data.getFormattedValue(row, sthlh).replace(/\s+/g, '');
