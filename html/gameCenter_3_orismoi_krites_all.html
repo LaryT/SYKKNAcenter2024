@@ -17,8 +17,8 @@
     <title>ΣΥΚΚΝΑ Center | Ορισμοί </title>
 	
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans:100,300,600" rel="stylesheet" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
-    <link href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" rel="stylesheet" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" xintegrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+    <link href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" rel="stylesheet" xintegrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous" />
     <!-- Custom styles for this template -->    
     <link href="../css/main.css" rel="stylesheet" />
     <link href="../css/gameCenter_3_programma-agvnvn-apotelesmata-bathmologia.css" rel="stylesheet" />
@@ -33,7 +33,7 @@
 		// Set a callback to run when the Google Visualization API is loaded.
 		google.charts.setOnLoadCallback(drawchart);	 	 
 
-	console.log("ΣΥΚΚΝΑ - v.2024.08.22 - s12 - my-border_top");
+	console.log("ΣΥΚΚΝΑ - v.2025.09.21 - 6 θέσεις Κριτών 3- Στατιστική 3");
 	var myEmail = "";
 	var myPass =  "";
 	var idFileDiaithtes="";
@@ -109,7 +109,8 @@
 		
 
 			if(onomateponymo_KRITH_GiaFiltroProsemfanish > "" ){
-				strQueryForURI = "SELECT * WHERE N='" + onomateponymo_KRITH_GiaFiltroProsemfanish +"' OR O='"+onomateponymo_KRITH_GiaFiltroProsemfanish + "' OR P='"+onomateponymo_KRITH_GiaFiltroProsemfanish +"'  order by D desc,E desc ";
+				// --- MODIFICATION: Added OR K, L, M to search for referees as well
+				strQueryForURI = "SELECT * WHERE N='" + onomateponymo_KRITH_GiaFiltroProsemfanish +"' OR O='"+onomateponymo_KRITH_GiaFiltroProsemfanish + "' OR P='"+onomateponymo_KRITH_GiaFiltroProsemfanish + "' OR K='" + onomateponymo_KRITH_GiaFiltroProsemfanish + "' OR L='" + onomateponymo_KRITH_GiaFiltroProsemfanish + "' OR M='" + onomateponymo_KRITH_GiaFiltroProsemfanish + "'  order by D desc,E desc ";
 			}else if(onomateponymo_DIAITHTH_GiaFiltroProsemfanish > "" ){
 				strQueryForURI = "SELECT * WHERE K='" + onomateponymo_DIAITHTH_GiaFiltroProsemfanish +"' OR L='"+onomateponymo_DIAITHTH_GiaFiltroProsemfanish + "' OR M='"+onomateponymo_DIAITHTH_GiaFiltroProsemfanish +"'  order by D desc,E desc ";
 			}else{
@@ -565,14 +566,15 @@
 										iDiv.innerHTML ='<i class="fas fa-ban text-warning"></i> Διαιτητές';										
 									}
 									document.getElementById('div-name-diat-left-'+ row).appendChild(iDiv);
-
+									
+									// --- MODIFICATION: Changed 'Δ' to 'Σ'
 									if( data.getFormattedValue(row, 10) !=='' ){
 										var iDiv = document.createElement('div');
 										iDiv.id = 'name-diat-a-left-' + row;
 										iDiv.className = 'name-diathtvn-kritvn';
 										iDiv.innerHTML ='1. '+ data.getFormattedValue(row, 10);
 										document.getElementById('div-name-diat-left-'+ row).appendChild(iDiv);										
-										baleEggrafhStaAtomika(row,data,10, 'Δ1', true);
+										baleEggrafhStaAtomika(row,data,10, 'Σ1', true);
 									}
 									if( data.getFormattedValue(row, 11) !=='' ){
 										var iDiv = document.createElement('div');
@@ -580,7 +582,7 @@
 										iDiv.className = 'name-diathtvn-kritvn';
 										iDiv.innerHTML ='2. '+ data.getFormattedValue(row, 11);
 										document.getElementById('div-name-diat-left-'+ row).appendChild(iDiv);
-										baleEggrafhStaAtomika(row,data,11, 'Δ2', true);										
+										baleEggrafhStaAtomika(row,data,11, 'Σ2', true);										
 									}
 									if( data.getFormattedValue(row, 12) !=='' ){
 										var iDiv = document.createElement('div');
@@ -588,7 +590,7 @@
 										iDiv.className = 'name-diathtvn-kritvn';
 										iDiv.innerHTML ='3. '+ data.getFormattedValue(row, 12);
 										document.getElementById('div-name-diat-left-'+ row).appendChild(iDiv);									
-										baleEggrafhStaAtomika(row,data,12, 'Δ3', true);	
+										baleEggrafhStaAtomika(row,data,12, 'Σ3', true);	
 									}
 
 				//---------- 
@@ -671,7 +673,7 @@
 			var iTr = document.createElement('tr');
 			iTr.id = 'orismos-' + row+'-'+sthlh;
 			// elegxei poy na balei border top line για να δειχνει ομαδοποιημένα τους ορισμούς ενος αγώνα των τριων κριτών εγγραφες
-			if(tieinaiorismenos == "K1" ){
+			if(tieinaiorismenos == "K1" || tieinaiorismenos == "Σ1" ){
 				iTr.className = 'seira-orismou-diaithth-krith my-border-top justify-content-between align-items-center text-left cl-diaithtes-krites cl-'+ data.getFormattedValue(row, sthlh).replace(/\s+/g, '');
 			}else{
 				iTr.className = 'seira-orismou-diaithth-krith  justify-content-between align-items-center text-left cl-diaithtes-krites cl-'+ data.getFormattedValue(row, sthlh).replace(/\s+/g, '');
@@ -1037,7 +1039,7 @@
 
     </script>
 
-	<!-- *******  01 lary 2024 ******** -->
+	<!-- ******* 01 lary 2024 ******** -->
 	<link href="https://cdn.metroui.org.ua/v4/css/metro-all.min.css" rel="stylesheet">
 
 	<style>
@@ -1052,7 +1054,7 @@
 			background-color:lightblue;
 		}
 	</style>
-	<!-- *******  end 01 lary 2024 ******** -->
+	<!-- ******* end 01 lary 2024 ******** -->
   </head>
 
   <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="80">
@@ -1073,7 +1075,7 @@
       </div>
     </nav>
 
-	<!-- *******  01 lary 2024 ******** -->
+	<!-- ******* 01 lary 2024 ******** -->
 	<div id="myBody" class="h-vh-100 bg-brandColor2">
 		<form class="login-form bg-white p-6 mx-auto border bd-default win-shadow"
 			data-role="validator"
@@ -1222,8 +1224,8 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" xintegrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" xintegrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
 
     <!-- my JavaScript
     ================================================== -->
@@ -1259,7 +1261,7 @@
 
 
 
-<!-- *******  01 lary 2024 ******** -->
+<!-- ******* 01 lary 2024 ******** -->
 <script src="https://cdn.metroui.org.ua/v4/js/metro.min.js"></script>
 
 
@@ -1395,7 +1397,7 @@
 		}		
 
 </script>
-<!-- *******  01 lary 2024 ******** -->
+<!-- ******* 01 lary 2024 ******** -->
 		<style>
 
 	@media (max-width: 768px) {
